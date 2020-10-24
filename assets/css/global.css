@@ -1,0 +1,306 @@
+/*----------------------------------------------------------------------------*
+	$GLOBAL
+	Carga todos los recursos requeridos y los compila en un único archivo
+*----------------------------------------------------------------------------*/
+.g-container,
+.g-container-header,
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 321px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+.g-container {
+  max-width: 480px;
+}
+@media only screen and (min-width: 321px) {
+  .g-container {
+    max-width: 580px;
+  }
+}
+@media only screen and (min-width: 481px) {
+  .g-container {
+    max-width: 800px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .g-container {
+    max-width: 1010px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .g-container {
+    max-width: 1210px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .g-container {
+    max-width: 1234px;
+  }
+}
+.c-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.c-home-ilustration {
+  width: 40%;
+}
+.c-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(40,44,52,0.95);
+  padding: 1rem 2.7rem;
+}
+@media only screen and (min-width: 1200px) {
+  .c-fixed {
+    padding: 0 6rem;
+  }
+}
+.c-header {
+  display: flex;
+  justify-content: space-between;
+}
+.c-header a {
+  white-space: nowrap;
+}
+.c-header__logo {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  align-items: center;
+}
+.c-header__logo a {
+  display: inherit;
+}
+ul.c-header__menu {
+  display: none;
+}
+@media only screen and (min-width: 769px) {
+  ul.c-header__menu {
+    display: flex;
+  }
+  ul.c-header__menu li {
+    height: -webkit-max-content;
+    height: max-content;
+    border-radius: 100px;
+    margin: 3px;
+    border: 2px solid #000;
+  }
+  ul.c-header__menu li a {
+    line-height: 34px;
+    font-size: 1.8rem;
+    display: inline-block;
+    padding: 0 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  ul.c-header__menu li.active {
+    transition: 0.7s ease;
+    border: 2px solid #fff5e4;
+    background: rgba(255,255,255,0.13);
+  }
+  ul.c-header__menu li:hover {
+    transition: 0.5s ease;
+    background: rgba(255,255,255,0.13);
+  }
+  ul.c-header__menu li i {
+    vertical-align: middle;
+    font-size: 1.8rem;
+    padding-left: 0.8rem;
+  }
+}
+li.dropdown {
+  position: relative;
+}
+li.dropdown:hover > ul,
+li.dropdown:focus-within > ul,
+li.dropdown ul:hover,
+li.dropdown ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+ul.dropdown-container {
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  min-width: 5rem;
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+ul.dropdown-container li {
+  text-align: center;
+  background-color: #3d3d3d;
+  clear: both;
+  width: 100%;
+}
+.c-menu-social {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .c-menu-social {
+    display: block;
+    position: relative;
+    background: #fff5e4;
+  }
+  .c-menu-social label,
+  .c-menu-social a {
+    color: #303c42;
+  }
+  .c-menu-social ul {
+    display: none;
+    position: absolute;
+    top: 125%;
+    left: -20%;
+    border-radius: 20px;
+  }
+  .c-menu-social ul li {
+    background: #fff5e4;
+  }
+  .c-menu-social ul li :hover {
+    color: #fff5e4;
+    transition: 0.5s ease;
+  }
+  .c-menu-social ul li:nth-child(1):hover {
+    background: #3b5998;
+  }
+  .c-menu-social ul li:nth-child(2):hover {
+    background: #833ab4;
+    background: linear-gradient(90deg, #833ab4 0%, #fc1d1d 50%, #fcb045 100%);
+  }
+  .c-menu-social ul li:nth-child(3):hover {
+    background: radial-gradient(circle, #1e2337 32%, #5000ff 91%);
+  }
+  .c-menu-social ul li:nth-child(4):hover {
+    background: #25d266;
+  }
+}
+.c-header__burguer {
+  font-size: 4.5rem;
+}
+@media only screen and (min-width: 769px) {
+  .c-header__burguer {
+    display: none;
+  }
+}
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out 0s;
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.75;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(1.2);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+.mfp-close {
+  display: none !important;
+}
+.mfp-bg {
+  background: #fff8ec !important;
+}
+.c-popup {
+  position: relative;
+  margin: 3.8rem auto 0;
+  width: 37rem;
+  box-shadow: #000 0px 0px 20px;
+  border-radius: 8px;
+}
+.c-popup__menu {
+  overflow: hidden;
+  background: #303c42;
+  border-radius: 8px 8px 0 0;
+}
+.c-popup__menu li {
+  border-bottom: 1px solid rgba(255,245,228,0.2);
+}
+.c-popup__menu li.active {
+  border: 2px solid #fff5e4;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.13);
+}
+.c-popup__menu a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding: 2.3rem;
+}
+.c-popup__menu a img {
+  width: 2.4rem;
+  padding-left: 0.3rem;
+}
+.c-popup__menu a i {
+  font-size: 2.3rem;
+  padding-left: 0.8rem;
+}
+.c-popup__social {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  background: #fff8ec;
+  border-radius: 0 0 8px 8px;
+}
+.c-popup__social span {
+  display: none;
+}
+.c-popup__social i {
+  display: block;
+  font-size: 4.5rem;
+  padding: 1rem;
+  color: #303c42;
+}
+body.c-block-body {
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+.g-container {
+  position: relative;
+  top: 8rem;
+  height: 93vh;
+  padding: 0 5rem;
+}
+@media only screen and (min-width: 1200px) {
+  .g-container {
+    top: 4.3rem;
+  }
+}
+/*# sourceMappingURL=global.css.map */
