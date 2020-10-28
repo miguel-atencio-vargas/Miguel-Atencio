@@ -81,8 +81,13 @@
   font-weight: 700;
   align-self: end;
 }
+.c-home-title img {
+  display: inline-block;
+  width: 3rem;
+  vertical-align: middle;
+}
 .c-home-ilustration {
-  width: 50%;
+  width: 65%;
   padding: 2rem 4rem;
 }
 @media only screen and (min-width: 769px) {
@@ -264,7 +269,13 @@ ul.dropdown-container li {
   }
 }
 .c-header__burguer {
-  font-size: 4.5rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-header__burguer img {
+  vertical-align: middle;
 }
 @media only screen and (min-width: 769px) {
   .c-header__burguer {
