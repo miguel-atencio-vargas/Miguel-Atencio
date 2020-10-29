@@ -2,6 +2,35 @@
 	$GLOBAL
 	Carga todos los recursos requeridos y los compila en un único archivo
 *----------------------------------------------------------------------------*/
+html {
+  height: 100%;
+  border: 1px solid #ff00c7;
+}
+@media only screen and (min-width: 321px) {
+  html {
+    border: 3px solid #f00;
+  }
+}
+@media only screen and (min-width: 481px) {
+  html {
+    border: 3px solid #ffe600;
+  }
+}
+@media only screen and (min-width: 769px) {
+  html {
+    border: 3px solid #1cff00;
+  }
+}
+@media only screen and (min-width: 992px) {
+  html {
+    border: 3px solid #00e8ff;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    border: 3px solid #5900ff;
+  }
+}
 .g-container,
 .g-container-header,
 .section {
@@ -62,13 +91,13 @@
   }
 }
 .c-home {
-  height: 100vh;
-  padding-top: 1rem;
+  padding-top: 5rem;
   text-align: center;
 }
 @media only screen and (min-width: 769px) {
   .c-home {
-    padding-top: 4rem;
+    height: 100vh;
+    padding-top: 3rem;
     display: grid;
     grid-column-gap: 6rem;
     grid-template-columns: 1fr 1fr;
@@ -83,25 +112,18 @@
 }
 .c-home-title img {
   display: inline-block;
-  width: 3rem;
+  width: 2.5rem;
   vertical-align: middle;
 }
 .c-home-ilustration {
-  width: 65%;
-  padding: 2rem 4rem;
+  width: 70%;
+  padding: 2rem 3rem 1.2rem 3rem;
 }
 @media only screen and (min-width: 769px) {
   .c-home-ilustration {
     width: 100%;
     align-self: center;
-    grid-area: ilustration;
-  }
-}
-@media only screen and (min-width: 769px) {
-  .c-home-ilustration {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
+    grid-area: 'ilustration';
   }
 }
 .c-home-subtitle {
@@ -135,6 +157,28 @@
   border: 3px solid #21ffd6;
   color: #05192d;
   transition: 0.7s ease;
+}
+.c-home-skills {
+  padding-top: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: 'title title' 'item item';
+}
+@media only screen and (min-width: 769px) {
+  .c-home-skills {
+    padding-top: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+p.c-home-skills-title {
+  grid-area: 'title';
+}
+a.c-home-skills-item {
+  grid-area: 'item';
+}
+.c-home-skills-icon {
+  width: 4rem;
 }
 .c-fixed {
   position: fixed;
@@ -368,7 +412,6 @@ body.c-block-body {
 .g-container {
   position: relative;
   top: 8rem;
-  height: 93vh;
   padding: 0 5rem;
 }
 @media only screen and (min-width: 1200px) {
