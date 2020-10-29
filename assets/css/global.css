@@ -2,35 +2,6 @@
 	$GLOBAL
 	Carga todos los recursos requeridos y los compila en un único archivo
 *----------------------------------------------------------------------------*/
-html {
-  height: 100%;
-  border: 1px solid #ff00c7;
-}
-@media only screen and (min-width: 321px) {
-  html {
-    border: 3px solid #f00;
-  }
-}
-@media only screen and (min-width: 481px) {
-  html {
-    border: 3px solid #ffe600;
-  }
-}
-@media only screen and (min-width: 769px) {
-  html {
-    border: 3px solid #1cff00;
-  }
-}
-@media only screen and (min-width: 992px) {
-  html {
-    border: 3px solid #00e8ff;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  html {
-    border: 3px solid #5900ff;
-  }
-}
 .g-container,
 .g-container-header,
 .section {
@@ -123,7 +94,7 @@ html {
   .c-home-ilustration {
     width: 100%;
     align-self: center;
-    grid-area: 'ilustration';
+    grid-area: ilustration;
   }
 }
 .c-home-subtitle {
@@ -158,24 +129,61 @@ html {
   color: #05192d;
   transition: 0.7s ease;
 }
-.c-home-skills {
-  padding-top: 7rem;
+.c-home-skills,
+.c-home-softSkills {
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  grid-template-areas: 'title title' 'item item';
+  grid-template-areas: 'title title';
+}
+.c-home-skills a,
+.c-home-softSkills a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+.c-home-skills a h3,
+.c-home-softSkills a h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-right: 1rem;
 }
 @media only screen and (min-width: 769px) {
-  .c-home-skills {
+  .c-home-skills,
+  .c-home-softSkills {
     padding-top: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'title title title title';
   }
 }
 p.c-home-skills-title {
-  grid-area: 'title';
+  grid-area: title;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
-a.c-home-skills-item {
-  grid-area: 'item';
+.c-home-skills > p.c-home-skills-title, .c-home-softSkills > p.c-home-skills-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+}
+@media only screen and (min-width: 769px) {
+  .c-home-ilustration {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+  }
+  p.c-home-skills-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .c-home-skills > p.c-home-skills-title, .c-home-softSkills > p.c-home-skills-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
 }
 .c-home-skills-icon {
   width: 4rem;

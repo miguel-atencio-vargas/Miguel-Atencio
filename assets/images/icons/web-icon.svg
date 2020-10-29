@@ -4,7 +4,7 @@
 </g>
 <path d="M4 42C4 21.0132 21.0132 4 42 4H436C456.987 4 474 21.0132 474 42V128H4V42Z" fill="#21FFD6"/>
 <g filter="url(#filter1_i)">
-<rect x="40" y="32" width="240" height="64" rx="32" fill="#44546C"/>
+<rect x="40" y="32" width="240" height="64" rx="32" fill="#05192D"/>
 </g>
 <g filter="url(#filter2_i)">
 <circle cx="408" cy="64" r="32" fill="#FC5753"/>
@@ -12,11 +12,11 @@
 <g filter="url(#filter3_i)">
 <circle cx="328" cy="64" r="32" fill="#32C749"/>
 </g>
-<rect x="8" y="8" width="464" height="400" rx="30" stroke="#111111" stroke-width="16"/>
+<rect x="8" y="8" width="464" height="400" rx="30" stroke="#6C7FD8" stroke-width="16"/>
 <circle cx="328" cy="64" r="24" stroke="black" stroke-width="16"/>
 <circle cx="408" cy="64" r="24" stroke="black" stroke-width="16"/>
 <rect x="48" y="40" width="224" height="48" rx="24" stroke="black" stroke-width="16"/>
-<line x1="16" y1="120" x2="464" y2="120" stroke="black" stroke-width="16"/>
+<line x1="16" y1="120" x2="464" y2="120" stroke="#6C7FD8" stroke-width="16"/>
 <line x1="144" y1="232" x2="335" y2="232" stroke="#1FFF78" stroke-opacity="0.47" stroke-width="16"/>
 <path d="M344 264C344 321.438 297.438 368 240 368C182.562 368 136 321.438 136 264C136 206.562 182.562 160 240 160C297.438 160 344 206.562 344 264Z" stroke="black" stroke-width="16"/>
 <line x1="144" y1="232" x2="335" y2="232" stroke="black" stroke-width="16"/>
